@@ -8,4 +8,5 @@ module.exports = {
     return config;
   },
   basePath: "/portafolio",
+  output: "export",
 };
