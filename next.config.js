@@ -8,7 +8,7 @@ module.exports = {
     return config;
   },
   images: {
-    domains: [process.env.DOMAIN],
+    domains: ['github.io', 'localhost'],
     output: "standalone",
     reactStrictMode: false,
   },
