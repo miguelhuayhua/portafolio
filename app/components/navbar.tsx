@@ -84,6 +84,16 @@ const Navbar = () => {
                             Proyectos
                         </button>
                     </Link>
+                    <Link href={"/proyectos"} passHref>
+                        <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
+                            Trayectoria
+                        </button>
+                    </Link>
+                    <Link href={"/proyectos"} passHref>
+                        <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
+                            Sobre mí
+                        </button>
+                    </Link>
                 </li>
             </ul>
         </div>
