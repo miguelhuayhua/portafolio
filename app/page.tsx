@@ -2,7 +2,7 @@
 
 import { Content } from "antd/es/layout/layout";
 import Navbar from "./components/navbar";
-import { Affix, Card, Carousel, Col, FloatButton, Row, Timeline, Tooltip } from "antd";
+import { Affix, Card, Carousel, Col, FloatButton, Row, Timeline } from "antd";
 import Image from 'next/legacy/image';
 //estilos
 import './estilos.scss'
@@ -18,6 +18,7 @@ import { SiExpress, SiFastapi, SiCsharp, SiPandas } from 'react-icons/si';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Footer from "./components/footer";
+import Social from "./components/social";
 export default function Home() {
   const particlesInit = async (main: any) => {
 
@@ -25,37 +26,10 @@ export default function Home() {
   };
   return (
     <div className="body">
-
       <Navbar></Navbar>
-      <div className="social-media to-left">
-        <ul>
-          <li>
-            <Tooltip title="Facebook" placement="leftTop">
-              <Link target="_blank" href={"https://www.facebook.com/profile.php?id=100056301607149"}>
-                <AiFillFacebook className="icon" />
-              </Link>
-            </Tooltip>
-          </li>
-          <li>
-            <Tooltip title="LinkedIn" placement="leftTop">
-              <Link target="_blank" href={"https://www.linkedin.com/in/miguel-huayhua/"}>
-                <AiFillLinkedin className="icon" />
-              </Link>
-
-            </Tooltip>
-          </li>
-          <li>
-            <Tooltip title="GitHub" placement="leftTop">
-              <Link target="_blank" href={"https://github.com/miguelhuayhua"}>
-                <AiFillGithub className="icon" />
-              </Link>
-            </Tooltip>
-          </li>
-        </ul>
-      </div>
+      <Social></Social>
       <main >
         <Content className="mt-3 " >
-
           <Row gutter={[24, 0]} className="mx-0 ">
             <Particles init={particlesInit} options={{
               "particles":
@@ -215,7 +189,7 @@ export default function Home() {
 
             </Col>
 
-            <Col span={24} className="bg-white px-0 mx-0 position-relative" >
+            <Col span={24} className="bg-white px-0 mx-0" >
               <div className="triangle px-0 mx-0"></div>
               <div className="float-logo">
                 <Image src={"/assets/logo-miguel-white.png"} width={100} height={100} layout="fixed"></Image>
@@ -296,7 +270,7 @@ export default function Home() {
               </section>
 
             </Col>
-            <Col span={24} className="bg-white px-0 mx-0 position-relative" >
+            <Col span={24} className="bg-white px-0 mx-0" >
               <div className="triangle-down px-0 mx-0"></div>
               <div className="float-logo">
                 <Image src={"/assets/logo-miguel-white.png"} width={100} height={100} layout="fixed"></Image>
@@ -313,7 +287,7 @@ export default function Home() {
                   </div>
                 </Col>
                 <Col span={24} md={{ span: 8 }} >
-                  <div className="modern-card" style={{ background: "linear-gradient(259deg, rgba(105,60,60,1) 0%, rgba(35,2,2,1) 100%);" }}>
+                  <div className="modern-card" style={{ background: "linear-gradient(195deg, rgba(122,48,48,1) 0%, rgba(35,2,2,1) 100%)" }}>
                     <MdOutlineWebAsset fontSize={50} color="white" />
                     <h5>Desarrollo de escritorio</h5>
                     <p> Aplicaciones de Windows en lo absoluto.</p>
@@ -335,7 +309,6 @@ export default function Home() {
       </main >
       <Footer />
       <FloatButton.BackTop />
-
     </div>
   )
 }

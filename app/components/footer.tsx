@@ -19,14 +19,14 @@ const Footer = () => {
 
                     </div>
                 </Col>
-                <Col span={6}>
+                <Col span={24} sm={{ span: 12 }} lg={{ span: 8 }} xl={{ span: 6 }}>
                     <p className='info-light'>
                         <AiFillMail />
                         <b>Mi correo:</b>
                         miguelhuayhuac2@gmail.com
                     </p>
                 </Col>
-                <Col span={6}>
+                <Col span={24} sm={{ span: 12 }} lg={{ span: 8 }} xl={{ span: 6 }}>
                     <p className='info-light'>
                         <Link target='_blank' className='link' passHref href={"https://api.whatsapp.com/send?phone=59169848691&text=¡Hola! Quiero saber más sobre tus servicios."}>
                             <BsWhatsapp />
@@ -35,7 +35,7 @@ const Footer = () => {
                         </Link>
                     </p>
                 </Col>
-                <Col span={6}>
+                <Col span={24} sm={{ span: 12 }} lg={{ span: 8 }} xl={{ span: 6 }}>
                     <p className='info-light'>
                         <Link target='_blank' className='link' passHref href={"https://www.messenger.com/t/100056301607149?text=Hola%2C%20estoy%20interesado%20con%20tus%20servicios%20freelance%2C%20%C2%BFpuedes%20darme%20m%C3%A1s%20informaci%C3%B3n%3F"}>
                             <BsMessenger />
@@ -44,7 +44,7 @@ const Footer = () => {
                         </Link>
                     </p>
                 </Col>
-                <Col span={6}>
+                <Col span={24} sm={{ span: 12 }} lg={{ span: 8 }} xl={{ span: 6 }}>
                     <p className='info-light'>
                         <Link target='_blank' className='link' passHref href={"https://www.linkedin.com/messaging/compose?recipient=miguel-huayhua"}>
                             <AiFillLinkedin />

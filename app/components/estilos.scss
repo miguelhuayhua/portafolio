@@ -28,6 +28,30 @@ nav {
   }
 }
 
+//SOCIAL MEDIA
+.social-media {
+  margin-right: 15px;
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  display: flex;
+  flex-direction: column !important;
+  li {
+    text-decoration: none !important;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(139, 0, 0);
+    .icon {
+      color: white;
+      font-size: 2em;
+    }
+  }
+}
 //DROPDOWN
 .drop-btn {
   text-decoration: none;
@@ -78,7 +102,8 @@ nav {
   color: white;
   font-weight: 600;
   border-radius: 0;
-  border-bottom: 1px solid rgb(156, 0, 0);
+  border-bottom: 1px solid rgb(68, 20, 20);
+  padding: 30px 0;
   &:hover {
     color: rgb(186, 61, 61);
   }
@@ -168,6 +193,7 @@ footer {
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
+  padding: 20px 0;
   font-weight: 100;
   text-align: center;
   color: white !important;
@@ -180,5 +206,20 @@ footer {
     margin: 5px 10px;
     font-weight: bold;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  //SOCIAL MEDIA
+  .social-media {
+    margin-right: 0px !important;
+    li {
+      width: 30px !important;
+      height: 30px !important;
+      .icon {
+        font-size: 1em !important;
+      }
+    }
   }
 }

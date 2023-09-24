@@ -23,25 +23,15 @@ code {
   .text {
     font-size: 12px;
   }
-  //SOCIAL MEDIA
-  .social-media {
-    margin-right: 0px !important;
-    li {
-      width: 30px !important;
-      height: 30px !important;
-      .icon {
-        font-size: 1em !important;
-      }
-    }
-  }
+
 }
 //CUSTOM CARD
 .custom-card {
   text-align: center;
   background-color: transparent;
-  border-radius: 5px !important;
-  border: 1px solid rgb(78, 51, 51) !important;
-  box-shadow: 0 0 20px rgb(66, 36, 36) !important;
+  border-radius: 0 !important;
+  border: 1px solid rgb(27, 11, 11) !important;
+  box-shadow: 0 0 20px rgb(34, 7, 7) !important;
   .ant-card-head {
     color: white;
     border: none;
