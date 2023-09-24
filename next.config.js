@@ -7,6 +7,6 @@ module.exports = {
     });
     return config;
   },
-  basePath: "/portafolio",
+  basePath: "portafolio",
   output: "export",
 };
