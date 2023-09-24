@@ -1,0 +1,184 @@
+nav {
+  height: 80px;
+  background-color: black;
+  z-index: 100000;
+  ul {
+    display: flex;
+    height: 80px;
+    align-items: center;
+
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+//BOTONES
+.nav-btn {
+  color: white;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+
+  &:hover {
+    color: red;
+  }
+}
+
+//DROPDOWN
+.drop-btn {
+  text-decoration: none;
+  color: red !important;
+}
+//linea
+.linea {
+  width: 100%; // Ancho de la línea
+  height: 1px; // Grosor de la línea
+  background: rgb(210, 210, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(186, 186, 186, 1) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+@keyframes moverPunto {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%; // Mueve el punto a lo largo de la línea
+  }
+}
+
+.punto-brillante {
+  width: 20px; // Tamaño del punto brillante
+  height: 2px; // Tamaño del punto brillante
+  background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.8) 10%,
+      transparent 20%
+    ),
+    radial-gradient(circle, rgba(255, 255, 255, 0.5) 30%, transparent 40%),
+    radial-gradient(circle, rgba(255, 255, 255, 0.3) 50%, transparent 60%),
+    radial-gradient(circle, rgba(255, 255, 255, 0.2) 70%, transparent 80%),
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 90%, transparent 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: 0%; // Alinea verticalmente en el centro de la línea
+  transform: translateX(-50%);
+  animation: moverPunto 30s linear infinite; // Ajusta la duración y el tipo de movimiento
+}
+//toggle button
+.nav-btn-toggle {
+  color: white;
+  font-weight: 600;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(156, 0, 0);
+  &:hover {
+    color: rgb(186, 61, 61);
+  }
+}
+
+.toggle-btn {
+  display: none;
+  position: absolute;
+  border: none;
+  top: 10px;
+  background-color: transparent;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  .icon {
+    color: rgb(218, 45, 45);
+    font-size: 40px !important;
+  }
+  box-shadow: none;
+  &:focus,
+  &:hover {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.responsive-navbar {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background-color: #1e1e1ebe;
+  z-index: 1000;
+  height: 100vh;
+  ul {
+    width: 70%;
+    background-color: black;
+    height: 100%;
+    display: block;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    list-style: none !important;
+    li {
+      padding: 10px;
+    }
+  }
+  transform: translateX(-110%);
+  transition: transform 1.5s;
+}
+.show {
+  transform: translateX(0%);
+  transition: transform 1.5s;
+}
+@media (max-width: 768px) {
+  // Aquí colocas tus estilos específicos para pantallas de tamaño mediano
+  .only-md-down {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  // Aquí colocas tus estilos específicos para pantallas de tamaño mediano
+
+  .responsive-navbar {
+    display: none;
+  }
+}
+
+//PARA PARA EL COMPONENTE DE FOOTER
+footer {
+  background-color: #8b0000 !important;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  b {
+    color: rgb(220, 220, 220);
+  }
+  p {
+    color: rgb(198, 198, 198);
+  }
+}
+
+.info-light {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+  font-weight: 100;
+  text-align: center;
+  color: white !important;
+  .link {
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+  }
+  b {
+    margin: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+}

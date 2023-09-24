@@ -1,0 +1,115 @@
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+//responsive
+@media (max-width: 768px) {
+  // Aquí colocas tus estilos específicos para pantallas de tamaño mediano
+  .only-md {
+    display: none;
+  }
+  .large {
+    width: 100% !important;
+  }
+}
+
+.body {
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-size: cover;
+  }
+}
+
+//animaciones
+
+.to-left {
+  animation: normal 2s to-left;
+}
+
+@keyframes to-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.to-right {
+  animation: normal 2s to-right;
+}
+@keyframes to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.rotate {
+  animation: rotate 10s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//ant design globals
+//close btn
+.ant-drawer-close {
+  color: white !important;
+}
+.ant-switch {
+  background-color: red !important;
+}
+.ant-switch-checked {
+  background-color: rgb(196, 143, 143) !important;
+}
+//dropdown
+.ant-dropdown-menu-item-selected {
+  background-color: red !important;
+  a {
+    color: white !important;
+  }
+}
+//carrousel
+.slick-arrow {
+  color: white;
+  font-size: 4em;
+}
+
+.text-red {
+  color: rgb(129, 15, 15) !important;
+  font-weight: 600 !important;
+  margin-top: 20px !important;
+}
+
+//DECORACIONES
+.line-border-bottom {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(98, 98, 98);
+}
+.text-thinner {
+  color: white;
+  text-align: center;
+  font-weight: lighter !important;
+  font-size: 2em;
+  padding: 10px 0;
+}
