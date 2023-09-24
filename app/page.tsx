@@ -100,7 +100,7 @@ export default function Home() {
               <Col span={24} lg={{ span: 10 }} className="px-0"  >
                 <Row>
                   <Col span={12} offset={6} sm={{ span: 16, offset: 4 }} md={{ span: 8, offset: 8 }} lg={{ span: 24, offset: 0 }}>
-                    <Image className="to-right" src={"/assets/lion.png"} alt="Leon fuerte logo" width={90} height={90} layout="responsive" style={{ filter: 'brightness(.65)' }}></Image>
+                    <Image className="to-right" src={process.env.URL+"/assets/lion.png"} alt="Leon fuerte logo" width={90} height={90} layout="responsive" style={{ filter: 'brightness(.65)' }}></Image>
                   </Col>
                 </Row>
               </Col>
@@ -227,7 +227,7 @@ export default function Home() {
                 <section className="bg-white">
                   <Row>
                     <Col span={10} offset={7} md={{ span: 4, offset: 10 }}>
-                      <Image src={"/assets/logo-miguel-white.png"} width={100} height={100} layout="responsive"></Image>
+                      <Image src={process.env.URL+"/assets/logo-miguel-white.png"} width={100} height={100} layout="responsive"></Image>
                     </Col>
                     <Col span={24} className="my-4">
                       <h4 className="text-center text-red">Es hora de unir tu creatividad con la tecnología</h4>
@@ -243,7 +243,7 @@ export default function Home() {
                               <span >Juntos identificaremos tus metas y desafíos.</span>
                             </div>,
                             children: <Card className="ms-4">
-                              <Image src={"/assets/time1.jpg"} width={100} height={60} layout="responsive"></Image>
+                              <Image src={process.env.URL+"/assets/time1.jpg"} width={100} height={60} layout="responsive"></Image>
                               <p className="description">Comenzaré nuestro viaje reuniéndome contigo para entender tus objetivos
                                 comerciales y desafíos actuales. Esta fase es donde identificamos cómo la tecnología puede ser tu aliada para alcanzar el éxito</p>
                             </Card>,
@@ -254,7 +254,7 @@ export default function Home() {
                             label: <div className="time-title">
                               <span >Creamos un plan personalizado que se ajuste a tus necesidades y presupuesto.</span>
                             </div>,
-                            children: <Card className="me-4">                              <Image src={"/assets/time2.jpg"} width={100} height={60} layout="responsive"></Image>
+                            children: <Card className="me-4">                              <Image src={process.env.URL+"/assets/time2.jpg"} width={100} height={60} layout="responsive"></Image>
                               <p className="description">Diseñamos junto a tí un plan estratégico personalizado que se adapte perfectamente a las
                                 necesidades únicas de tu negocio. Este plan será tu hoja de ruta para abrazar la tecnología de manera efectiva y rentable.</p>
                             </Card>
@@ -266,7 +266,7 @@ export default function Home() {
                                 <span >Elegimos las mejores herramientas que impulsen tu negocio.</span>
                               </div>,
                             children: <Card className="ms-4">
-                              <Image src={"/assets/time3.jpg"} width={100} height={60} layout="responsive"></Image>
+                              <Image src={process.env.URL+"/assets/time3.jpg"} width={100} height={60} layout="responsive"></Image>
                               <p className="description"> En esta etapa, seleccionamos cuidadosamente las soluciones tecnológicas que mejor se ajusten a tus requerimientos.
                                 Esto incluye identificar herramientas y tecnologías que te ayudarán a lograr tus objetivos.</p>
                             </Card>
@@ -279,7 +279,7 @@ export default function Home() {
                                 <span >Tu equipo aprenderá a abrazar la tecnología para un rendimiento óptimo.</span>
                               </div>,
                             children: <Card className="me-4">
-                              <Image src={"/assets/time4.jpg"} width={100} height={60} layout="responsive"></Image>
+                              <Image src={process.env.URL+"/assets/time4.jpg"} width={100} height={60} layout="responsive"></Image>
                               <p className="description"> No solo implementaré tecnología, sino que también brindaré la ayuda a tu equipo en su uso efectivo. Quiero asegurarme de que todos estén cómodos y aprovechen al máximo las nuevas herramientas.</p>
                             </Card>
                           },
@@ -290,7 +290,7 @@ export default function Home() {
                               <span className="">Puedes buscarme cuando quieras y mantener actualizado con las últimos innovaciones.</span>
                             </div>,
                             children: <Card className="ms-4">
-                              <Image src={"/assets/time5.jpg"} width={100} height={60} layout="responsive"></Image>
+                              <Image src={process.env.URL+"/assets/time5.jpg"} width={100} height={60} layout="responsive"></Image>
                               <p className="description"> Debido a que la tecnología está constante evolución.
                                 Mantendré el sistema actualizado con tus nuevas necesidades a través de un costo menor y al tanto de las últimas innovaciones para que tu negocio siga prosperando en la era digital.</p>
                             </Card>
@@ -309,7 +309,7 @@ export default function Home() {
                 <Row gutter={16}>
                   <Col span={24} md={{ span: 8 }}>
                     <Card className="custom-card" title={<h5 className="text-center line-border-bottom ">Desarrollo Web</h5>} bordered={false}>
-                      <Image src={"/assets/card1.jpg"} width={100} height={60} layout="responsive"></Image>
+                      <Image src={process.env.URL+"/assets/card1.jpg"} width={100} height={60} layout="responsive"></Image>
                       <p className="description">Me enfoco en el desarrollo web especialmente, haciendo el manejo de Frameworks
                         bastante demandados hoy en día, así también de otras herramientas que se me fueron
                         aprendidas con el paso del tiempo.</p>
@@ -317,14 +317,14 @@ export default function Home() {
                   </Col>
                   <Col span={24} md={{ span: 8 }}>
                     <Card className="custom-card" title={<h5 className="text-center line-border-bottom">Desarrollo de escritorio</h5>} bordered={false}>
-                      <Image src={"/assets/card2.jpg"} width={100} height={60} layout="responsive"></Image>
+                      <Image src={process.env.URL+"/assets/card2.jpg"} width={100} height={60} layout="responsive"></Image>
                       <p className="description">Mi trabajo también consiste en desarrollar programas de escritorio especialmente en Windows,
                         puedes confiar mi trabajo, y si deseas innovar puedo tener la habilidad de aprender más cosas para brindarte algo de alto nivel.</p>
                     </Card>
                   </Col>
                   <Col span={24} md={{ span: 8 }}>
                     <Card className="custom-card" title={<h5 className="text-center line-border-bottom ">Desarrollo Móvil</h5>} bordered={false}>
-                      <Image src={"/assets/card3.jpg"} width={100} height={60} layout="responsive"></Image>
+                      <Image src={process.env.URL+"/assets/card3.jpg"} width={100} height={60} layout="responsive"></Image>
                       <p className="description">Me enfoco en el desarrollo web especialmente, haciendo el manejo de Frameworks
                         bastante demandados hoy en día, así también de otras herramientas que se me fueron
                         aprendidas con el paso del tiempo.</p>

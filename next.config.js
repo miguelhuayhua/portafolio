@@ -1,5 +1,5 @@
 module.exports = {
-  env: {},
+  env: { URL: process.env.URL },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.node/,
@@ -7,5 +7,13 @@ module.exports = {
     });
     return config;
   },
-  output: "export",
+  images: {
+    domains: [process.env.DOMAIN],
+    output: "standalone",
+    reactStrictMode: false,
+  },
+  experimental: {
+    appDir: true,
+  },
+  
 };

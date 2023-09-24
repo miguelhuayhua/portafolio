@@ -38,7 +38,7 @@ const Navbar = () => {
                 <Row>
                     <Col span={4} offset={1}>
                         <Link href={"/"} passHref>
-                            <Image className="rotate" src={"/assets/logo-miguel.png"} layout="fixed" width={100}
+                            <Image className="rotate" src={process.env.URL + "/assets/logo-miguel.png"} layout="fixed" width={100}
                                 height={80} alt="logo miguel freelancer"></Image>
                         </Link>
                     </Col>
