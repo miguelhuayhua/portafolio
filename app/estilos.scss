@@ -166,15 +166,7 @@ code {
   font-size: 1.1em;
 }
 
-.dot {
-  font-size: 3em;
-  color: red;
-  transition: transform 1s;
-  &:hover {
-    transform: rotateX(360deg) !important;
-    transition: transform 1s;
-  }
-}
+
 //modern card
 .modern-card {
   padding: 30px;
@@ -199,4 +191,9 @@ code {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+
+.ant-timeline-item-tail{
+  background-color: rgb(249, 249, 249) ;
 }

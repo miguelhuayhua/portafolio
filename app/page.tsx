@@ -8,7 +8,6 @@ import Image from 'next/legacy/image';
 import './estilos.scss'
 import Link from "next/link";
 //icons
-import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { MdWeb, MdOutlineWebAsset } from 'react-icons/md';
 import { FaMobile } from 'react-icons/fa';
 import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb';
@@ -19,6 +18,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Footer from "./components/footer";
 import Social from "./components/social";
+import { particlesOptions } from "./data";
 export default function Home() {
   const particlesInit = async (main: any) => {
 
@@ -31,40 +31,7 @@ export default function Home() {
       <main >
         <Content className="mt-3 " >
           <Row gutter={[24, 0]} className="mx-0 ">
-            <Particles init={particlesInit} options={{
-              "particles":
-              {
-                "number": { "value": 40, "density": { "enable": true, "value_area": 900 } },
-                "color": { "value": "#bbb" },
-                "shape": {
-                  "type": "circle",
-                  "stroke": {
-                    "width": 0,
-                    "color": "#FFF"
-                  },
-                  "polygon": { "nb_sides": 5 },
-                }, "opacity": {
-                  "value": 0.4, "random": false,
-                  "anim": { "enable": false, "speed": 0.5, "opacity_min": 0.1, "sync": false }
-                },
-                "size": {
-                  "value": 2, "random": true,
-                  "anim": { "enable": true, "speed": 20, "size_min": 1, "sync": false }
-                },
-                "line_linked": { "enable": true, "distance": 200, "color": "#AAA", "opacity": 0.4, "width": 1 },
-                "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } }
-              }, "interactivity": {
-                "detect_on": "window", "events": {
-                  "onhover": { "enable": true, "mode": "repulse" },
-                  "onclick": { "enable": true, "mode": "push" }, "resize": true
-                },
-                "modes": {
-                  "grab": { "distance": 100, "line_linked": { "opacity": 0 } },
-                  "repulse": { "distance": 100, "duration": 0.4 }, "push": { "particles_nb": 1 }, "remove": { "particles_nb": 10 }
-                }
-              }, "retina_detect": true
-            }} />
-
+            <Particles init={particlesInit} options={particlesOptions} />
             <Col span={24} lg={{ span: 10 }} className="px-0"  >
               <Row>
                 <Col span={12} offset={6} sm={{ span: 16, offset: 4 }} md={{ span: 8, offset: 8 }} lg={{ span: 24, offset: 0 }}>

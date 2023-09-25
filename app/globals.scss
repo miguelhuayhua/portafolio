@@ -12,8 +12,7 @@
 }
 
 .body {
- background-color: black;
- 
+  background-color: black;
 }
 
 //animaciones
@@ -102,4 +101,14 @@
   font-weight: lighter !important;
   font-size: 2em;
   padding: 10px 0;
+}
+
+.dot {
+  font-size: 3em;
+  color: red;
+  transition: transform 1s;
+  &:hover {
+    transform: rotateX(360deg) !important;
+    transition: transform 1s;
+  }
 }

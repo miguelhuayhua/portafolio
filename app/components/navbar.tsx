@@ -45,9 +45,9 @@ const Navbar = () => {
                     <Col span={12} offset={2} className="only-md">
                         <ul>
                             <li>
-                                <Link href={"/proyectos"} passHref>
+                                <Link href={"/historial"} passHref>
                                     <button className="btn nav-btn">
-                                        Proyectos
+                                        Historial
                                     </button>
                                 </Link>
                             </li>
@@ -79,17 +79,17 @@ const Navbar = () => {
             className={open ? "responsive-navbar show" : "responsive-navbar"} >
             <ul className="mt-4">
                 <li>
-                    <Link href={"/proyectos"} passHref>
+                    <Link href={"/historial"} passHref>
                         <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
-                            Proyectos
+                            Historial
                         </button>
                     </Link>
-                    <Link href={"/proyectos"} passHref>
+                    <Link href={"/historial"} passHref>
                         <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
                             Trayectoria
                         </button>
                     </Link>
-                    <Link href={"/proyectos"} passHref>
+                    <Link href={"/historial"} passHref>
                         <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
                             Sobre mí
                         </button>

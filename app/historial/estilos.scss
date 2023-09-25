@@ -1,0 +1,55 @@
+.clock {
+  color: white !important;
+  font-size: 2em;
+}
+.ant-timeline-item-head-custom {
+  background-color: transparent !important;
+}
+
+//cartas
+.proyecto {
+}
+
+.certificado {
+}
+
+.exp-laboral {
+  b {
+    font-size: 1.25em;
+    color: rgb(202, 91, 91);
+    margin: 0 20px;
+  }
+  p {
+    color: rgb(165, 165, 165);
+    padding: 0 10px;
+  }
+  span {
+    color: rgb(148, 148, 148);
+    display: inline-block;
+    align-items: center;
+    font-size: 0.9em;
+  }
+  .tag {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+  }
+}
+
+//titulo e íconos
+
+.title {
+  color: white;
+  margin: 3em 20px;
+}
+.icon {
+  font-size: 1.6em;
+  margin-right: 0.25em;
+}
+.time2 {
+  .ant-timeline-item-tail {
+    background-color: rgb(54, 54, 54) !important;
+  }
+}
