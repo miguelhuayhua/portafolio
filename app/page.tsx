@@ -26,7 +26,7 @@ export default function Home() {
   };
   return (
     <div className="body">
-      <Navbar></Navbar>
+      <Navbar active={0}></Navbar>
       <Social></Social>
       <main >
         <Content className="mt-3 " >

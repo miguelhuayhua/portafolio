@@ -1,6 +1,40 @@
 .parraf {
   color: rgb(165, 165, 165);
   font-weight: 200;
-  font-size: 1.25em;
+  font-size: 1.05em;
   margin: 30px 0;
+}
+.tag-small {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 2.5px;
+  margin: 5px;
+}
+
+table {
+  border-bottom: 1px solid rgb(99, 99, 99);
+  width: 100%;
+  margin: 20px 0;
+  th {
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    border: 1px solid rgb(104, 5, 5);
+    background-color: rgb(104, 5, 5);
+  }
+  td {
+    vertical-align: middle;
+    color: gray;
+    padding-left: 10px;
+
+    border-left: 1px solid rgb(99, 99, 99);
+    border-right: 1px solid rgb(99, 99, 99);
+    ul {
+      margin-top: 10px;
+      li {
+        padding-top: 2.5px;
+      }
+    }
+  }
 }

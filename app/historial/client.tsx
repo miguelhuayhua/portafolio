@@ -20,7 +20,6 @@ import { GrNode } from 'react-icons/gr';
 import { TbBrandGoogle, TbBrandNextjs } from 'react-icons/tb';
 import { BsFillBootstrapFill, BsMicrosoft } from 'react-icons/bs';
 import { SiOpenai, SiFastapi, SiPostgresql } from 'react-icons/si';
-import Card from 'react-animated-3d-card';
 import Image from 'next/legacy/image';
 const Client = () => {
     const particlesInit = async (main: any) => {
@@ -367,49 +366,23 @@ const Client = () => {
                                         </Space>
                                     </div>,
                                 },
-
                             ]}
                         />
                     </Col>
-                    <Col span={24} className="my-5" >
+                    <Col span={8} offset={8} className="my-5" >
                         <h3>Mi tarjeta</h3>
                         <div style={{ margin: "auto auto !important" }}>
-                            <Card
-                                style={{
-                                    width: 325,
-                                    height: 200,
-                                    margin: "0 auto !important"
-                                }}
-                            >
-                                <Image src={"/assets/1.png"} width={325} height={200} layout="fixed"></Image>
-                            </Card>
-
+                            <Image src={"/assets/1.png"} width={100} height={60} layout="responsive"></Image>
                         </div>
-
                     </Col>
-                    <Col span={24} className="mb-5" >
+                    <Col span={4} offset={10} className="mb-5" >
                         <h3>Descarga mi información personal</h3>
-
-                        <div style={{ margin: "auto auto !important" }}>
-                            <Card
-                                style={{
-                                    width: 200,
-                                    height: 200,
-                                    margin: "0 auto !important"
-                                }}
-                            >
-                                <Image src={"/assets/qr-code.png"} width={200} height={200} layout="fixed"></Image>
-                            </Card>
-
-                        </div>
-
+                        <Image src={"/assets/qr-code.png"} width={100} height={100} layout="responsive"></Image>
                     </Col>
                 </Row>
-
             </main >
             <Footer />
             <FloatButton.BackTop />
-
         </>
     )
 }

@@ -2,8 +2,8 @@
 import Client from "./client";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-    title: 'Miguel Huayhua - Historial',
-    description: 'Vea un poco de mi historial de trabajo por este medio.',
+    title: 'Miguel Huayhua - Sobre mí',
+    description: 'Conozca un poco a cerca de mí, mi personalidad y mi ética de trabajo. ',
 
     openGraph: {
         title: "Miguel Huayhua - Freelancer Desarrollo de Aplicaciones y Programas",

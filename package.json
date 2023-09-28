@@ -27,8 +27,5 @@
     "tsparticles-engine": "^2.12.0",
     "tsparticles-path-polygon": "^2.12.0",
     "typescript": "5.2.2"
-  },
-  "devDependencies": {
-    "react-animated-3d-card": "^1.0.2"
   }
 }
