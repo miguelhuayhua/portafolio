@@ -30,7 +30,7 @@ const items: MenuProps['items'] = [
 ];
 
 
-const Navbar = () => {
+const Navbar = (props: { active: number }) => {
     const [open, setOpen] = useState(false);
     return <>
         <Affix offsetTop={0}>
@@ -46,8 +46,22 @@ const Navbar = () => {
                         <ul>
                             <li>
                                 <Link href={"/historial"} passHref>
-                                    <button className="btn nav-btn">
+                                    <button className={props.active == 1 ? "btn nav-btn active" : "btn nav-btn"}>
                                         Historial
+                                    </button>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={"/mitrabajo"} passHref >
+                                    <button className={props.active == 2 ? "btn nav-btn active" : "btn nav-btn"}>
+                                        Mi trabajo
+                                    </button>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={"/sobremi"} passHref>
+                                    <button className={props.active == 3 ? "btn nav-btn active" : "btn nav-btn"}>
+                                        ¿Quién soy?
                                     </button>
                                 </Link>
                             </li>
@@ -80,18 +94,18 @@ const Navbar = () => {
             <ul className="mt-4">
                 <li>
                     <Link href={"/historial"} passHref>
-                        <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
+                        <button className={props.active == 1 ? "btn nav-btn-toggle active" : "btn nav-btn-toggle"}>
                             Historial
                         </button>
                     </Link>
                     <Link href={"/historial"} passHref>
-                        <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
-                            Trayectoria
+                        <button className={props.active == 2 ? "btn nav-btn-toggle active" : "btn nav-btn-toggle"}>
+                            Mi trabajo
                         </button>
                     </Link>
                     <Link href={"/historial"} passHref>
-                        <button className="btn nav-btn-toggle" style={{ width: "100%" }}>
-                            Sobre mí
+                        <button className={props.active == 3 ? "btn nav-btn-toggle active" : "btn nav-btn-toggle"}>
+                            ¿Quién soy?
                         </button>
                     </Link>
                 </li>

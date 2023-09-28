@@ -11,22 +11,24 @@ import { BiTimeFive } from 'react-icons/bi';
 import { particlesOptions } from "../data";
 import Navbar from "../components/navbar";
 //icons
-import { SiCsharp, SiVisualbasic, SiSololearn, SiUdemy, SiFrontendmentor, SiHackerrank, SiMicrosoftazure, SiCanva, SiAdobephotoshop } from 'react-icons/si';
+import { SiCsharp, SiVisualbasic, SiSololearn, SiUdemy, SiFrontendmentor, SiHackerrank, SiMicrosoftazure, SiCanva, SiAdobephotoshop, SiMysql } from 'react-icons/si';
 import { HiLocationMarker } from 'react-icons/hi';
-import { FaFreeCodeCamp } from 'react-icons/fa';
+import { FaFreeCodeCamp, FaLaravel } from 'react-icons/fa';
 import { BiLogoRedux, BiLogoReact, BiLogoCss3, BiLogoJavascript, BiLogoMongodb } from 'react-icons/bi';
 import { AiFillGoogleCircle, AiFillHtml5, AiOutlineArrowLeft, AiOutlineArrowRight, AiFillApi, AiFillLinkedin, AiFillProject, AiOutlineAntDesign } from 'react-icons/ai';
 import { GrNode } from 'react-icons/gr';
 import { TbBrandGoogle, TbBrandNextjs } from 'react-icons/tb';
 import { BsFillBootstrapFill, BsMicrosoft } from 'react-icons/bs';
-import { SiOpenai, SiFastapi } from 'react-icons/si';
+import { SiOpenai, SiFastapi, SiPostgresql } from 'react-icons/si';
+import Card from 'react-animated-3d-card';
+import Image from 'next/legacy/image';
 const Client = () => {
     const particlesInit = async (main: any) => {
         await loadFull(main);
     };
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar active={1}></Navbar>
 
             <Social></Social>
             <main >
@@ -40,7 +42,22 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> 03/2021 hasta 10/2021 </p>
+                                        <p className="title"><AiOutlineArrowLeft /> Enero 2019 - 2024 Aprox </p>
+                                    ,
+                                    children: <div className="exp-laboral">
+                                        <b>Inicio Universitario</b>
+                                        <br />
+                                        <span><HiLocationMarker className="icon" />Universidad Pública de El Alto</span>
+                                        <p>
+                                            Inicio de estudios universitarios, carrera Ingeniería de Sistemas
+                                        </p>
+                                    </div>,
+                                },
+
+                                {
+                                    dot: <BiTimeFive className="clock" />,
+                                    label:
+                                        <p className="title"> 03/2021 hasta 10/2021 <AiOutlineArrowRight /> </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Desarrollador SIMPLEX</b>
@@ -58,7 +75,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title">Marzo / 2022 <AiOutlineArrowRight /> </p>
+                                        <p className="title"><AiOutlineArrowLeft /> Marzo / 2022  </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>React + Redux</b>
@@ -76,7 +93,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> Marzo / 2022 </p>
+                                        <p className="title"> Marzo / 2022 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Node: De cero a experto</b>
@@ -93,7 +110,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title">Marzo / 2022 <AiOutlineArrowRight /> </p>
+                                        <p className="title"><AiOutlineArrowLeft /> Marzo / 2022  </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Introducción al desarollo web II</b>
@@ -110,7 +127,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> Marzo / 2022 </p>
+                                        <p className="title"> Marzo / 2022 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Iniciación a la programación con JavaScript</b>
@@ -125,7 +142,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"> Marzo / 2022 <AiOutlineArrowRight /></p>
+                                        <p className="title"><AiOutlineArrowLeft /> Marzo / 2022 </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>CSS - Básico a Avanzado - FrontEnd</b>
@@ -140,7 +157,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> Abril / 2022 </p>
+                                        <p className="title"> Abril / 2022 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>JavaScript</b>
@@ -155,7 +172,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title">Abril / 2022 <AiOutlineArrowRight /> </p>
+                                        <p className="title"><AiOutlineArrowLeft /> Abril / 2022  </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Desarrollo FrontEnd con React y Bootstrap</b>
@@ -172,7 +189,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> Abril / 2022 </p>
+                                        <p className="title"> Abril / 2022 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Librerias de Desarrollo FrontEnd</b>
@@ -188,7 +205,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title">Abril / 2022 <AiOutlineArrowRight /> </p>
+                                        <p className="title"> <AiOutlineArrowLeft /> Abril / 2022 </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Machine Learning Básico</b>
@@ -204,7 +221,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> Mayo / 2022 </p>
+                                        <p className="title"> Mayo / 2022 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>React</b>
@@ -219,7 +236,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"> Mayo / 2022 <AiOutlineArrowRight /></p>
+                                        <p className="title"><AiOutlineArrowLeft /> Mayo / 2022 </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>M001: MongoDB Basics</b>
@@ -234,7 +251,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> Mayo / 2022 </p>
+                                        <p className="title"> Mayo / 2022 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Desarrollo Backend y APIs</b>
@@ -250,7 +267,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"> Junio / 2022 <AiOutlineArrowRight /></p>
+                                        <p className="title"><AiOutlineArrowLeft /> Junio / 2022 </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Microsoft Azure Fundamentals</b>
@@ -265,7 +282,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft /> Septiembre / 2022 </p>
+                                        <p className="title"> Septiembre / 2022 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Fundación de administración de proyectos</b>
@@ -281,7 +298,7 @@ const Client = () => {
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"> Julio/2022 hasta Diciembre /2022 <AiOutlineArrowRight /> </p>
+                                        <p className="title"><AiOutlineArrowLeft /> Julio/2022 hasta Diciembre /2022  </p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Diseñador POSGRADO - UPEA</b>
@@ -298,7 +315,7 @@ const Client = () => {
                                 }, {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"><AiOutlineArrowLeft />  Febrero / 2023</p>
+                                        <p className="title">  Febrero / 2023 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Microsoft Data Scientist Associate</b>
@@ -310,11 +327,29 @@ const Client = () => {
                                             <Tag icon={<BsMicrosoft fontSize={20} />} className="tag"></Tag>
                                         </Space>
                                     </div>,
+                                }, {
+                                    dot: <BiTimeFive className="clock" />,
+                                    label:
+                                        <p className="title"><AiOutlineArrowLeft /> 03/2023 hasta 08/2023 </p>
+                                    ,
+                                    children: <div className="exp-laboral">
+                                        <b>Desarrollador SIE - UPEA </b>
+                                        <br />
+                                        <span><HiLocationMarker className="icon" /> Instituto de Investigación - UPEA</span>
+                                        <p>
+                                            Pasante en desarrollo de sistemas para el manejo de Laravel.
+                                        </p>
+                                        <Space size={[0, 8]} wrap>
+                                            <Tag icon={<SiMysql className="icon" />} className="tag">MySql</Tag>
+                                            <Tag icon={<BsFillBootstrapFill className="icon" />} className="tag">Bootstrap</Tag>
+                                            <Tag icon={<FaLaravel className="icon" />} className="tag">Laravel</Tag>
+                                        </Space>
+                                    </div>,
                                 },
                                 {
                                     dot: <BiTimeFive className="clock" />,
                                     label:
-                                        <p className="title"> 03/2021 hasta 10/2021 <AiOutlineArrowRight /></p>
+                                        <p className="title"> 03/2023 hasta 12/2023 <AiOutlineArrowRight /></p>
                                     ,
                                     children: <div className="exp-laboral">
                                         <b>Auxiliar Investigador - Ingeniería de Sistemas </b>
@@ -328,11 +363,46 @@ const Client = () => {
                                             <Tag icon={<BsFillBootstrapFill className="icon" />} className="tag">Bootstrap</Tag>
                                             <Tag icon={<AiOutlineAntDesign className="icon" />} className="tag">AntDesign</Tag>
                                             <Tag icon={<SiFastapi className="icon" />} className="tag">FastAPI</Tag>
+                                            <Tag icon={<SiPostgresql className="icon" />} className="tag">PostgreSql</Tag>
                                         </Space>
                                     </div>,
                                 },
+
                             ]}
                         />
+                    </Col>
+                    <Col span={24} className="my-5" >
+                        <h3>Mi tarjeta</h3>
+                        <div style={{ margin: "auto auto !important" }}>
+                            <Card
+                                style={{
+                                    width: 325,
+                                    height: 200,
+                                    margin: "0 auto !important"
+                                }}
+                            >
+                                <Image src={"/assets/1.png"} width={325} height={200} layout="fixed"></Image>
+                            </Card>
+
+                        </div>
+
+                    </Col>
+                    <Col span={24} className="mb-5" >
+                        <h3>Descarga mi información personal</h3>
+
+                        <div style={{ margin: "auto auto !important" }}>
+                            <Card
+                                style={{
+                                    width: 200,
+                                    height: 200,
+                                    margin: "0 auto !important"
+                                }}
+                            >
+                                <Image src={"/assets/qr-code.png"} width={200} height={200} layout="fixed"></Image>
+                            </Card>
+
+                        </div>
+
                     </Col>
                 </Row>
 
