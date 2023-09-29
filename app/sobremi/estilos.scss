@@ -13,23 +13,22 @@
 }
 
 table {
-  border-bottom: 1px solid rgb(99, 99, 99);
   width: 100%;
   margin: 20px 0;
   th {
-    color: white;
+    color: rgb(153, 13, 13);;
     padding: 10px 5px;
     text-align: center;
-    border: 1px solid rgb(104, 5, 5);
-    background-color: rgb(104, 5, 5);
+    border-radius: 15px;
+    background-color: white;
+  }
+  tr{
+    border-radius: 20px;
+    color: white;
+    
   }
   td {
-    vertical-align: middle;
-    color: gray;
-    padding-left: 10px;
 
-    border-left: 1px solid rgb(99, 99, 99);
-    border-right: 1px solid rgb(99, 99, 99);
     ul {
       margin-top: 10px;
       li {

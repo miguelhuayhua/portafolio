@@ -34,11 +34,9 @@ const Client = () => {
             <main >
                 <Particles init={particlesInit} options={particlesOptions} />
                 <Row>
-                    <Col span={10} className="text-white text-center my-5">
-
-
+                    <Col span={10} className="text-white text-center my-5 to-right" >
                     </Col>
-                    <Col span={12}>
+                    <Col span={12} className="to-left">
                         <h1 className="text-white my-4">¿Quién soy?</h1>
                         <p className="parraf">
                             Mi nombre es Miguel Huayhua, soy una persona seria y dedicada con su trabajo,
@@ -57,18 +55,18 @@ const Client = () => {
                         </Space>
                         <h5 className="text-white text-center">Mi tarjeta</h5>
                         <div style={{ margin: "auto auto !important" }}>
-                            <Image src={"/assets/1.png"} width={100} height={60} layout="responsive"></Image>
+                            <Image src={"/assets/1.png"} className="rotate" width={100} height={60} layout="responsive"></Image>
                         </div>
                     </Col>
-                    <Col span={8}>
+                    <Col span={8} offset={4} className="to-left">
                         <table>
                             <tr>
                                 <th>Idiomas</th>
                                 <th>Conocimiento</th>
                             </tr>
                             <tr>
-                                <td>Inglés</td>
-                                <td>
+                                <td >Inglés</td>
+                                <td style={{ borderLeft: '1px solid #888' }}>
                                     <ul>
                                         <li>Habla - Intermedio 60% </li>
                                         <li>Escucha - Semiavanzado 90% </li>
@@ -77,8 +75,8 @@ const Client = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td>Español</td>
-                                <td>
+                                <td >Español</td>
+                                <td style={{ borderLeft: '1px solid #888' }} >
                                     <ul>
                                         <li>Nativo </li>
                                     </ul>
@@ -86,7 +84,7 @@ const Client = () => {
                             </tr>
                             <tr>
                                 <td>Portugués</td>
-                                <td>
+                                <td style={{ borderLeft: '1px solid #888' }}>
                                     <ul>
                                         <li>Habla - Básico 20% </li>
                                         <li>Escucha - Intermedio 60% </li>
@@ -96,9 +94,9 @@ const Client = () => {
                             </tr>
                         </table>
                     </Col>
-                    <Col span={4} offset={2} className="mb-5" >
+                    <Col span={4} offset={10} className="mb-5 to-up" >
                         <h5 className="text-white text-center">Descarga mi información personal</h5>
-                        <Image src={"/assets/qr-code.png"} width={100} height={100} layout="responsive"></Image>
+                        <Image src={"/assets/qr-code.png"}  width={100} height={100} layout="responsive"></Image>
                     </Col>
                 </Row>
 

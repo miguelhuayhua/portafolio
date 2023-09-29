@@ -4,12 +4,12 @@ export let particlesOptions: RecursivePartial<IOptions> = {
     "particles":
     {
         "number": { "value": 40, "density": { "enable": true, "value_area": 900 } },
-        "color": { "value": "#ccc" },
+        "color": { "value": "#F00" },
         "shape": {
             "type": "circle",
             "stroke": {
                 "width": 0,
-                "color": "#FFF"
+                "color": "#F00"
             },
             "polygon": { "nb_sides": 5 },
         }, "opacity": {
@@ -20,7 +20,7 @@ export let particlesOptions: RecursivePartial<IOptions> = {
             "value": 2, "random": true,
             "anim": { "enable": true, "speed": 20, "size_min": 1, "sync": false }
         },
-        "line_linked": { "enable": true, "distance": 200, "color": "#ccc", "opacity": 0.4, "width": 1 },
+        "line_linked": { "enable": true, "distance": 200, "color": "#FFF", "opacity": 0.4, "width": 1 },
         "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } }
     }, "interactivity": {
         "detect_on": "window", "events": {

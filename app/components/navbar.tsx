@@ -38,13 +38,18 @@ const Navbar = (props: { active: number }) => {
                 <Row>
                     <Col span={4} offset={1}>
                         <Link href={"/"} passHref>
-                            <Image className="rotate" src={"/assets/logo-miguel.png"} layout="fixed" width={100}
+                            <Image className="rotate" src={"/assets/logo.png"} layout="fixed" width={100}
                                 height={80} alt="logo miguel freelancer"></Image>
                         </Link>
                     </Col>
                     <Col span={12} offset={2} className="only-md">
                         <ul>
                             <li>
+                                <Link href={"/"} passHref>
+                                    <button className={props.active == 0 ? "btn nav-btn active" : "btn nav-btn"}>
+                                        Inicio
+                                    </button>
+                                </Link>
                                 <Link href={"/historial"} passHref>
                                     <button className={props.active == 1 ? "btn nav-btn active" : "btn nav-btn"}>
                                         Historial
@@ -54,7 +59,7 @@ const Navbar = (props: { active: number }) => {
                             <li>
                                 <Link href={"/mitrabajo"} passHref >
                                     <button className={props.active == 2 ? "btn nav-btn active" : "btn nav-btn"}>
-                                        Mi trabajo
+                                        Lo que hago
                                     </button>
                                 </Link>
                             </li>
@@ -93,6 +98,11 @@ const Navbar = (props: { active: number }) => {
             className={open ? "responsive-navbar show" : "responsive-navbar"} >
             <ul className="mt-4">
                 <li>
+                    <Link href={"/"} passHref>
+                        <button className={props.active == 0 ? "btn nav-btn-toggle active" : "btn nav-btn-toggle"}>
+                            Inicio
+                        </button>
+                    </Link>
                     <Link href={"/historial"} passHref>
                         <button className={props.active == 1 ? "btn nav-btn-toggle active" : "btn nav-btn-toggle"}>
                             Historial
@@ -100,7 +110,7 @@ const Navbar = (props: { active: number }) => {
                     </Link>
                     <Link href={"/historial"} passHref>
                         <button className={props.active == 2 ? "btn nav-btn-toggle active" : "btn nav-btn-toggle"}>
-                            Mi trabajo
+                            Lo que hago
                         </button>
                     </Link>
                     <Link href={"/historial"} passHref>

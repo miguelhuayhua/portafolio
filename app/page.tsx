@@ -39,7 +39,7 @@ export default function Home() {
                 </Col>
               </Row>
             </Col>
-            <Col span={24} lg={{ span: 14 }} className="px-0">
+            <Col span={24} lg={{ span: 14 }} className="px-0 to-left">
               <Row className="code-container">
                 <Col span={24}  >
                   <div className="punto-brillante2"></div>
@@ -159,7 +159,7 @@ export default function Home() {
             <Col span={24} className="bg-white px-0 mx-0" >
               <div className="triangle px-0 mx-0"></div>
               <div className="float-logo">
-                <Image src={"/assets/logo-miguel-white.png"} width={100} height={100} layout="fixed"></Image>
+                <Image src={"/assets/logo-white.png"} width={100} height={100} layout="fixed"></Image>
               </div>
             </Col>
             <Col span={24} className="px-0">
@@ -174,10 +174,10 @@ export default function Home() {
                       items={[
                         {
                           dot: <GiLion className="dot" style={{ transform: "rotateY(180deg)" }} />,
-                          label: <div className="time-title">
+                          label: <div className="time-title to-right">
                             <span >Juntos identificaremos tus metas y desafíos.</span>
                           </div>,
-                          children: <Card className="ms-4">
+                          children: <Card className="ms-4 to-left">
                             <Image src={"/assets/time1.jpg"} width={100} height={60} layout="responsive"></Image>
                             <p className="description">Comenzaré nuestro viaje reuniéndome contigo para entender tus objetivos
                               comerciales y desafíos actuales. Esta fase es donde identificamos cómo la tecnología puede ser tu aliada para alcanzar el éxito</p>
@@ -186,10 +186,10 @@ export default function Home() {
                         {
                           dot: <GiLion className="dot" />,
 
-                          label: <div className="time-title">
+                          label: <div className="time-title to-right">
                             <span >Creamos un plan personalizado que se ajuste a tus necesidades y presupuesto.</span>
                           </div>,
-                          children: <Card className="me-4">                              <Image src={"/assets/time2.jpg"} width={100} height={60} layout="responsive"></Image>
+                          children: <Card className="me-4 to-left">                              <Image src={"/assets/time2.jpg"} width={100} height={60} layout="responsive"></Image>
                             <p className="description">Diseñamos junto a tí un plan estratégico personalizado que se adapte perfectamente a las
                               necesidades únicas de tu negocio. Este plan será tu hoja de ruta para abrazar la tecnología de manera efectiva y rentable.</p>
                           </Card>
@@ -197,10 +197,10 @@ export default function Home() {
                         {
                           dot: <GiLion className="dot" style={{ transform: "rotateY(180deg)" }} />,
                           label:
-                            <div className="time-title">
+                            <div className="time-title to-right">
                               <span >Elegimos las mejores herramientas que impulsen tu negocio.</span>
                             </div>,
-                          children: <Card className="ms-4">
+                          children: <Card className="ms-4 to-left">
                             <Image src={"/assets/time3.jpg"} width={100} height={60} layout="responsive"></Image>
                             <p className="description"> En esta etapa, seleccionamos cuidadosamente las soluciones tecnológicas que mejor se ajusten a tus requerimientos.
                               Esto incluye identificar herramientas y tecnologías que te ayudarán a lograr tus objetivos.</p>
@@ -210,10 +210,10 @@ export default function Home() {
                           dot: <GiLion className="dot" />,
 
                           label:
-                            <div className="time-title">
+                            <div className="time-title to-right">
                               <span >Tu equipo aprenderá a abrazar la tecnología para un rendimiento óptimo.</span>
                             </div>,
-                          children: <Card className="me-4">
+                          children: <Card className="me-4 to-left">
                             <Image src={"/assets/time4.jpg"} width={100} height={60} layout="responsive"></Image>
                             <p className="description"> No solo implementaré tecnología, sino que también brindaré la ayuda a tu equipo en su uso efectivo. Quiero asegurarme de que todos estén cómodos y aprovechen al máximo las nuevas herramientas.</p>
                           </Card>
@@ -221,10 +221,10 @@ export default function Home() {
                         {
                           dot: <GiLion className="dot" style={{ transform: "rotateY(180deg)" }} />,
 
-                          label: <div className="time-title">
+                          label: <div className="time-title to-right">
                             <span className="">Puedes buscarme cuando quieras y mantener actualizado con las últimos innovaciones.</span>
                           </div>,
-                          children: <Card className="ms-4">
+                          children: <Card className="ms-4 to-left">
                             <Image src={"/assets/time5.jpg"} width={100} height={60} layout="responsive"></Image>
                             <p className="description"> Debido a que la tecnología está constante evolución.
                               Mantendré el sistema actualizado con tus nuevas necesidades a través de un costo menor y al tanto de las últimas innovaciones para que tu negocio siga prosperando en la era digital.</p>
@@ -240,7 +240,7 @@ export default function Home() {
             <Col span={24} className="bg-white px-0 mx-0" >
               <div className="triangle-down px-0 mx-0"></div>
               <div className="float-logo">
-                <Image src={"/assets/logo-miguel-white.png"} width={100} height={100} layout="fixed"></Image>
+                <Image src={"/assets/logo-white.png"} width={100} height={100} layout="fixed"></Image>
               </div>
             </Col>
             <Col span={24} className="p-0">

@@ -34,7 +34,7 @@ const Client = () => {
                 <Particles init={particlesInit} options={particlesOptions} />
                 <Row>
                     <Col span={24} className="text-white text-center my-5"> <h1>Mi Historial</h1></Col>
-                    <Col span={24}>
+                    <Col span={24} className="to-up">
                         <Timeline reverse rootClassName="time2" style={{ width: "95%", margin: '0 auto' }}
                             mode={'alternate'}
                             items={[
@@ -334,9 +334,9 @@ const Client = () => {
                                     children: <div className="exp-laboral">
                                         <b>Desarrollador SIE - UPEA </b>
                                         <br />
-                                        <span><HiLocationMarker className="icon" /> Instituto de Investigación - UPEA</span>
+                                        <span><HiLocationMarker className="icon" /> Unidad de Sistemas e Información Estadística - UPEA</span>
                                         <p>
-                                            Pasante en desarrollo de sistemas para el manejo de Laravel.
+                                           Desarrollo de sistemas con el manejo de Laravel caso: Relaciones Internacionales
                                         </p>
                                         <Space size={[0, 8]} wrap>
                                             <Tag icon={<SiMysql className="icon" />} className="tag">MySql</Tag>
@@ -372,10 +372,10 @@ const Client = () => {
                     <Col span={8} offset={8} className="my-5" >
                         <h3>Mi tarjeta</h3>
                         <div style={{ margin: "auto auto !important" }}>
-                            <Image src={"/assets/1.png"} width={100} height={60} layout="responsive"></Image>
+                            <Image className="rotate" src={"/assets/1.png"} width={100} height={60} layout="responsive"></Image>
                         </div>
                     </Col>
-                    <Col span={4} offset={10} className="mb-5" >
+                    <Col span={4} offset={10} className="mb-5 to-up" >
                         <h3>Descarga mi información personal</h3>
                         <Image src={"/assets/qr-code.png"} width={100} height={100} layout="responsive"></Image>
                     </Col>

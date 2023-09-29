@@ -29,6 +29,21 @@
     transform: translateX(0);
   }
 }
+
+
+.to-up {
+  animation: normal 2s to-up;
+}
+
+@keyframes to-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .to-right {
   animation: normal 2s to-right;
 }
