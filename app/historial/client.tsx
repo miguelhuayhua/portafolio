@@ -27,7 +27,7 @@ const Client = () => {
     };
     return (
         <>
-            <Navbar active={1}></Navbar>
+            <Navbar active={1} pathEn="/idid" pathEs="/historial"></Navbar>
 
             <Social></Social>
             <main >

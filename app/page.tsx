@@ -26,7 +26,7 @@ export default function Home() {
   };
   return (
     <div className="body">
-      <Navbar active={0}></Navbar>
+      <Navbar pathEn="/en" pathEs="/" active={0}></Navbar>
       <Social></Social>
       <main >
         <Content className="mt-3 " >

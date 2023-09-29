@@ -10,27 +10,28 @@ import { TbLanguageKatakana } from 'react-icons/tb'
 import { CgMenuMotion, CgMenu } from 'react-icons/cg'
 import { useState } from "react";
 
-const items: MenuProps['items'] = [
-    {
-        key: '1',
-        label: (
-            <Link href={""} className="drop-btn">
-                Español
-            </Link>
-        ),
-    },
-    {
-        key: '2',
-        label: (
-            <Link href={""} className="drop-btn">
-                English
-            </Link>
-        ),
-    }
-];
 
 
-const Navbar = (props: { active: number }) => {
+const Navbar = (props: { active: number, pathEs: string, pathEn: string }) => {
+    const items: MenuProps['items'] = [
+        {
+            key: '1',
+            label: (
+                <Link href={props.pathEs} className="drop-btn">
+                    Español
+                </Link>
+            ),
+        },
+        {
+            key: '2',
+            label: (
+                <Link href={props.pathEn} className="drop-btn">
+                    English
+                </Link>
+            ),
+        }
+    ];
+
     const [open, setOpen] = useState(false);
     return <>
         <Affix offsetTop={0}>

@@ -28,7 +28,7 @@ const Client = () => {
     };
     return (
         <>
-            <Navbar active={2}></Navbar>
+            <Navbar pathEn="/mywork" pathEs= "/mitrabajo" active={2}></Navbar>
 
             <Social></Social>
             <main >

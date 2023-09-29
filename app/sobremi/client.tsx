@@ -28,7 +28,7 @@ const Client = () => {
     };
     return (
         <>
-            <Navbar active={3}></Navbar>
+            <Navbar pathEn="/aboutme" pathEs="/sobremi" active={3}></Navbar>
 
             <Social></Social>
             <main >
